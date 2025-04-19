@@ -1,4 +1,4 @@
-/* Global Styles */
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
@@ -155,17 +155,17 @@ form button:focus {
     border-color: #646cff;
   }
 }
-/* Issue Card */
+
 .issue-card {
   background: white;
-  padding: 1.5rem; /* Added more padding for spaciousness */
-  margin-bottom: 1.5rem; /* Increased margin for spacing between cards */
-  border-radius: 8px; /* Rounded corners for a smooth look */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow effect */
-  border: 2px solid #ccc; /* Box outline with a subtle border */
-  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  padding: 1.5rem; 
+  margin-bottom: 1.5rem; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc; 
+  transition: border-color 0.3s ease; 
 }
 
 .issue-card:hover {
-  border-color: #ff9800; /* Change border color on hover */
+  border-color: #ff9800; 
 }
