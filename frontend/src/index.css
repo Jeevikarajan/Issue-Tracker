@@ -1,0 +1,142 @@
+/* Global Styles */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Link Styling */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  width: 100%; /* Ensure body spans full width */
+}
+
+/* Navbar */
+nav {
+  background-color: orange;
+  padding: 1rem 2rem; /* Reduced padding for less space */
+  color: white;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Fix navbar to the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+/* Navbar links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem; /* Reduced margin for closer links */
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Navbar link hover effect */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container for content */
+.container {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 4rem; /* Adjust for fixed navbar */
+}
+
+/* Heading */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+/* Button Styles */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #213547;
+  }
+
+  nav {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+
+  nav a {
+    color: #333;
+  }
+
+  nav a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    border-color: #ccc;
+  }
+
+  button:hover {
+    border-color: #646cff;
+  }
+}
